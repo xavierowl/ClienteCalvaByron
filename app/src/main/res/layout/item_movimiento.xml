@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:srcCompat="http://schemas.android.com/tools"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+        <RelativeLayout
+            android:id="@+id/creditoDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Producto"
+                android:paddingRight="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/creditoInformacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvProximo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stock: "/>
+            <TextView
+                android:id="@+id/txtStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_toRightOf="@id/tvProximo"/>
+            <TextView
+                android:id="@+id/tvPagado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$100.00/$200.00"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Egreso">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id del producto">
+        </TextView>
+
+        <EditText
+            android:layout_width="150dp"
+            android:id="@+id/txtId"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad del producto">
+        </TextView>
+        <EditText
+            android:layout_width="150dp"
+            android:id="@+id/txtCantidad"
+            android:layout_height="wrap_content">
+        </EditText>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vender"
+            android:id="@+id/btnVender">
+        </Button>
+    </LinearLayout>
+</RelativeLayout>
