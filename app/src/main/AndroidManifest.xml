@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Egreso"></activity>
+        <activity android:name=".ListarMovimientos"></activity>
+        <activity android:name=".listarProductos" />
+        <activity android:name=".Egreso" />
         <activity android:name=".Ingreso" />
         <activity android:name=".Ingresar" />
         <activity android:name=".MainActivity">

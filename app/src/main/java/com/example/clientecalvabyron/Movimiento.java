@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Movimiento {
 	private int mov_id;
 
-	private LocalDate mov_fecha;
+	private String mov_fecha;
 	private String mov_descripcion;
 	private int mov_ingreso;
 	private int mov_egreso;
@@ -23,11 +23,11 @@ public class Movimiento {
 		this.mov_id = mov_id;
 	}
 
-	public LocalDate getMov_fecha() {
+	public String getMov_fecha() {
 		return mov_fecha;
 	}
 
-	public void setMov_fecha(LocalDate mov_fecha) {
+	public void setMov_fecha(String mov_fecha) {
 		this.mov_fecha = mov_fecha;
 	}
 

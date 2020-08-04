@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
     private Button ingresar;
     private Button comprar;
     private Button vender;
+    private Button listar;
+    private Button kardex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         ingresar = findViewById(R.id.btnIngresar);
         comprar = findViewById(R.id.btnComprar);
         vender = findViewById(R.id.btnVender);
+        listar = findViewById(R.id.btnVerProductos);
+        kardex = findViewById(R.id.btnVerKardex);
 
         ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +45,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent ven = new Intent(MainActivity.this, Egreso.class);
                 startActivityForResult(ven, 1);
+            }
+        });
+
+        listar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent listar = new Intent(MainActivity.this, listarProductos.class);
+                startActivityForResult(listar, 1);
+            }
+        });
+
+        kardex.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent listar = new Intent(MainActivity.this, ListarMovimientos.class);
+                startActivityForResult(listar, 1);
             }
         });
     }

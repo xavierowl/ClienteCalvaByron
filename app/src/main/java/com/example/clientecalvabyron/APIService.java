@@ -21,4 +21,10 @@ public interface APIService {
     @GET("setEgreso")
     Call<ResponseBody> setEgreso(@Query("pro_id") int pro_id,
                                   @Query("pro_cantidad") int pro_cantidad);
+
+    @GET("getProductos")
+    Call<List<Producto>> getProductos();
+
+    @GET("getMovimientos")
+    Call<List<Movimiento>> getMovimientos(@Query("pro_id") int pro_id);
 }

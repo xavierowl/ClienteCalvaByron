@@ -30,6 +30,11 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Listar Productos"
+            android:id="@+id/btnVerProductos"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Comprar productos"
             android:id="@+id/btnComprar">
         </Button>
@@ -42,8 +47,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ver movimientos"
-            android:id="@+id/btnListar">
+            android:text="Ver kardex"
+            android:id="@+id/btnVerKardex">
         </Button>
     </LinearLayout>
 

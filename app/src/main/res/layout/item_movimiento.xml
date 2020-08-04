@@ -11,39 +11,47 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="4dp">
-        <RelativeLayout
-            android:id="@+id/creditoDescripcion"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="">
             <TextView
-                android:id="@+id/tvNombre"
-                android:layout_width="wrap_content"
+                android:id="@+id/tvCodigo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="Producto"
-                android:paddingRight="20dp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/creditoInformacion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                android:text="Código"/>
             <TextView
-                android:id="@+id/tvProximo"
-                android:layout_width="wrap_content"
+                android:id="@+id/tvFecha"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="Stock: "/>
+                android:text="Fecha"/>
             <TextView
-                android:id="@+id/txtStock"
-                android:layout_width="wrap_content"
+                android:id="@+id/tvTipo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="1"
-                android:layout_toRightOf="@id/tvProximo"/>
+                android:text="Tipo/Descripción"/>
             <TextView
-                android:id="@+id/tvPagado"
-                android:layout_width="wrap_content"
+                android:id="@+id/tvIngreso"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="$100.00/$200.00"
-                android:layout_alignParentRight="true"/>
-        </RelativeLayout>
+                android:text="Ingreso"/>
+            <TextView
+                android:id="@+id/tvEgreso"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Egreso"/>
+            <TextView
+                android:id="@+id/tvSaldo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Saldo"/>
+        </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
